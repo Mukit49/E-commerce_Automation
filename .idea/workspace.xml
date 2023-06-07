@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e8b8b0d-bc92-455f-b4d2-343d9c84587a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DriverUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/RegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +50,17 @@
     "last_directory_selection": "C:/Users/Progoti/Downloads/WebAutomation/src/test/java"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.RegisterTest">
+  <component name="RunManager" selected="TestNG.C:/Users/Progoti/Downloads/WebAutomation/testng.xml">
+    <configuration name="C:/Users/Progoti/Downloads/WebAutomation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebAutomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebAutomation" />
       <extension name="coverage">
@@ -126,15 +127,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.C:/Users/Progoti/Downloads/WebAutomation/testng.xml" />
       <item itemvalue="TestNG.LoginTest.HomePage" />
       <item itemvalue="TestNG.RegisterTest" />
       <item itemvalue="TestNG.LoginTest.loginTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Progoti/Downloads/WebAutomation/testng.xml" />
+        <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.LoginTest.HomePage" />
-        <item itemvalue="TestNG.LoginTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +153,7 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WebAutomation$RegisterTest.ic" NAME="RegisterTest Coverage Results" MODIFIED="1686083946811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/WebAutomation$RegisterTest.ic" NAME="RegisterTest Coverage Results" MODIFIED="1686142258156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testcases.*</FILTER>
     </SUITE>
   </component>

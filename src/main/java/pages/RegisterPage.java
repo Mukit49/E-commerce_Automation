@@ -18,6 +18,8 @@ public class RegisterPage extends BasePage {
 
     //click signup/login button
 
+    public String address_verify;
+
     WebElement signup_login_btn =driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a"));
 
 
@@ -35,7 +37,8 @@ public class RegisterPage extends BasePage {
 
 
     public String[] getting_registered() throws InterruptedException {
-        String[] strings = new String[2];
+        String[] strings = new String[4];
+
 
         //click_item_cart_btn.click();
         signup_login_btn.click();
@@ -51,7 +54,7 @@ public class RegisterPage extends BasePage {
         WebElement email_address = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
 
         email_address.clear();
-        email_address.sendKeys("sabbir101.mukit379@gmail.com");
+        email_address.sendKeys("sabbir17700.mukit379@gmail.com");
 
         Thread.sleep(2000);
 
@@ -140,6 +143,64 @@ public class RegisterPage extends BasePage {
         strings[1] = user_name.getText();
 
 
+        JavascriptExecutor js5 = (JavascriptExecutor) driver;
+        js5.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+
+        //add item to cart
+
+        WebElement add_item_cart = driver.findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/a"));
+        add_item_cart.click();
+
+
+        WebElement card_btn_click = driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[3]/a"));
+        card_btn_click.click();
+
+
+        //proceed to checkoutpage
+
+        WebElement checkout_btn = driver.findElement(By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a"));
+        checkout_btn.click();
+
+
+        WebElement address = driver.findElement(By.xpath("//*[@id=\"address_delivery\"]/li[4]"));
+        strings[2] = address.getText();
+
+        address_verify = strings[2];
+
+
+        WebElement description = driver.findElement(By.xpath("//*[@id=\"ordermsg\"]/textarea"));
+        description.sendKeys(" please take a note about that oreder.My location is khilkhet, Nikunjo-2, Road No:09, House No: 23");
+
+
+        WebElement place_order_btn = driver.findElement(By.xpath("//*[@id=\"cart_items\"]/div/div[7]/a"));
+        place_order_btn.click();
+
+
+        WebElement name_on_card = driver.findElement(By.xpath("//*[@id=\"payment-form\"]/div[1]/div/input"));
+        name_on_card.sendKeys("Md Sabbir");
+
+        WebElement card_number = driver.findElement(By.xpath("//*[@id=\"payment-form\"]/div[2]/div/input"));
+        card_number.sendKeys("2222 3333 4444 6645");
+
+        WebElement cvc = driver.findElement(By.xpath("//*[@id=\"payment-form\"]/div[3]/div[1]/input"));
+        cvc.sendKeys("344");
+
+        WebElement expiration_month = driver.findElement(By.xpath("//*[@id=\"payment-form\"]/div[3]/div[2]/input"));
+        expiration_month.sendKeys("05");
+
+        WebElement expiration_year = driver.findElement(By.xpath("//*[@id=\"payment-form\"]/div[3]/div[3]/input"));
+        expiration_year.sendKeys("2030");
+
+        WebElement pay_and_order_confirm = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
+        pay_and_order_confirm.click();
+
+
+
+
+        WebElement order_success_message = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div/p"));
+
+        strings[3] = order_success_message.getText();
+
 
 
 
@@ -150,6 +211,17 @@ public class RegisterPage extends BasePage {
         return strings;
 
 
+
+    }
+
+    public  String orederConfirm() throws InterruptedException {
+
+       String location[] = getting_registered();
+
+       String address = location[2];
+
+
+        return address;
 
     }
 

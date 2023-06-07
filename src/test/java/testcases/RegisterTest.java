@@ -16,34 +16,30 @@ public class RegisterTest {
     public RegisterTest() {
     }
 
-    @BeforeClass
-    public void setup() {
-        DriverUtils.initializeDriver();
-    }
+//    @BeforeClass
+//    public void setup() {
+//        DriverUtils.initializeDriver();
+//    }
 
 
-    @Test
+    @Test(priority = 1)
     public void RegisterPageTest() throws InterruptedException {
+        DriverUtils.initializeDriver();
         RegisterPage register = new RegisterPage();
-        String[] strings1 = new String[2];
+        String[] strings1 = new String[4];
         strings1 = register.getting_registered();
-
-
-
-
 
         Assert.assertEquals(strings1[0],"ACCOUNT CREATED!");
         Assert.assertEquals(strings1[1],"Logged in as Md. Mukit");
+
+        Assert.assertEquals(strings1[2],"Nikunjo-2");
+
+        Assert.assertEquals(strings1[3],"Congratulations! Your order has been confirmed!");
 
 
 
         // Add assertions and further test steps
     }
-
-
-
-
-
 
 
 }

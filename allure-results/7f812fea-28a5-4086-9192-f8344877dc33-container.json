@@ -1,0 +1,1 @@
+{"uuid":"7f812fea-28a5-4086-9192-f8344877dc33","name":"testcases.LoginTest.cleanup","children":["66f4fb95-9e8e-4ae3-9de9-0657b01456dc"],"description":"","befores":[],"afters":[{"name":"cleanup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1686145283138,"stop":1686145283756}],"start":1686145283138,"stop":1686145283756}
